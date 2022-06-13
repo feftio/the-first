@@ -9,10 +9,7 @@ const initialUserState = {
     phone: null,
 };
 
-const userReducer = (
-    state,
-    action
-) => {
+const userReducer = (state = initialUserState, action) => {
     switch (action.type) {
         case "USER/SET_USER_STATE":
             return { ...state, ...action.state };

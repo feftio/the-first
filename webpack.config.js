@@ -13,7 +13,6 @@ module.exports = function (env) {
             extensions: ["*", ".js", ".jsx"],
             alias: {
                 src: path.resolve(__dirname, "src/"),
-                styles: path.resolve(__dirname, "src/assets/styles"),
             },
         },
         output: {
@@ -57,7 +56,10 @@ module.exports = function (env) {
                         options: {
                             presets: [
                                 "@babel/preset-env",
-                                "@babel/preset-react",
+                                [
+                                    "@babel/preset-react",
+                                    { runtime: "automatic" },
+                                ],
                             ],
                         },
                     },
