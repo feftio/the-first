@@ -13,6 +13,7 @@ module.exports = function (env) {
             extensions: ["*", ".js", ".jsx"],
             alias: {
                 src: path.resolve(__dirname, "src/"),
+                styles: path.resolve(__dirname, "src/assets/styles"),
             },
         },
         output: {
