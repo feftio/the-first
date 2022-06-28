@@ -13,7 +13,6 @@
     justify-content: flex-start;
     align-items: center;
     width: 500px;
-    height: 500px;
     padding: 60px;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
@@ -23,13 +22,13 @@
 .start-button {
     display: block;
     width: 100%;
-    height: 200px;
+    height: 100px;
 }
 
 .create-server-button {
     display: block;
     width: 100%;
-    height: 100px;
+    height: 50px;
     margin-top: 10px;
 }
 
